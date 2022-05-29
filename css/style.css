@@ -235,6 +235,10 @@ footer:hover {
     .cabecalho {
         display: contents;
     }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
     .nome {
         border: 1px solid white;
         border-radius: 15px;
@@ -243,9 +247,6 @@ footer:hover {
         width: 350px;
         font-size: 20px;
         text-align: center;
-    }
-    .container {
-        padding: 0%;
     }
     .login {
         width: 350px;
@@ -264,6 +265,7 @@ footer:hover {
     }
     #horas {
         font-size: 80px;
+        margin-left: 30px;
     }
     .rodape {
         display: contents;
