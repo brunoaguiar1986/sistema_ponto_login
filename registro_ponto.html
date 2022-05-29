@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Registro do Usuário</title>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
+</head>
+
+<body>
+
+    <header class="cabecalho2">
+        <div class="head">
+            <h3 id="conexao"></h3>
+            <h3 id="fechar"><input type="button" id="sair" value="Sair" onclick="sair()"></h3>
+        </div>
+
+        <script>
+            //Mostrando que a conexão foi feita com sucesso e o usuário que fez o login
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: "Usuário Conectado: " + senha,
+                showConfirmButton: false,
+                timer: 3500
+            })
+        </script>
+
+        <script>
+            //Header com nome do usuário que fez o login e nome completo dos usuários
+            if (senha == usuario_server) {
+                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[0]);
+                document.getElementById('conexao').innerHTML = senha;
+            }
+            if (senha == usuario_admin) {
+                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[1]);
+                document.getElementById('conexao').innerHTML = senha;
+            }
+            if (senha == usuario_dev) {
+                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[2]);
+                document.getElementById('conexao').innerHTML = senha;
+            }
+        </script>
+    </header>
+
+    <h3>Não perca mais tempo, registre seu ponto!</h3>
+
+    <h1>
+        <p>Bem vindo!!
+            <h3 id="usuario"></h3>
+        </p>
+    </h1>
+
+    <table id="table">
+        <div class="registros">
+            <div class="horario">
+                <h2>Entrada</h2>
+                <br>
+                <input type="text" id="batida1" size="5" disabled>
+                <br>
+                <input type="button" id="bater" value="REGISTRE SEU PONTO" onclick="registrar1(),  this.disabled = true">
+            </div>
+            <br>
+            <div class="almoco_entrada">
+                <div>
+                    <h2>Almoço Entrada</h2>
+                    <br>
+                    <input type="text" id="batida2" size="5" disabled>
+                    <br>
+                    <input type="button" id="bater" value="REGISTRE SEU PONTO" onclick="registrar2(),  this.disabled = true">
+                </div>
+            </div>
+            <br>
+            <div class="almoco_retorno">
+                <h2>Almoço Retorno</h2>
+                <br>
+                <input type="text" id="batida3" size="5" disabled>
+                <br>
+                <input type="button" id="bater" value="REGISTRE SEU PONTO" onclick="registrar3(),  this.disabled = true">
+            </div>
+            <br>
+            <div class="saida">
+                <h2>Saída</h2>
+                <br>
+                <input type="text" id="batida4" size="5" disabled>
+                <br>
+                <input type="button" id="bater" value="REGISTRE SEU PONTO" onclick="registrar4(),  this.disabled = true">
+            </div>
+        </div>
+    </table>
+
+    <form>
+        <input class="pdf_imprimir" type="button" value="Clique aqui para salvar em PDF ou IMPRIMIR os seus registros diários" onClick="window.print()" />
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login de Ponto Eletrônico</title>
+</head>
+
+<body>
+
+    <script>
+        //Mostrando site atualizando
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Atualizando...'
+        })
+    </script>
+
+    <header class="cabecalho">
+        <h2 class="nome">Sistema de Ponto Eletrônico</h2>
+    </header>
+    <main>
+        <div class="tudo">
+            <div class="hora_imagem">
+                <div id="horas"></div>
+                <div class="imagem">
+                    <img class="image" src="img/computador_smartphone.png" alt="">
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="login">
+                    <h2 class="texto_login">Login</h2>
+                    <br>
+                    <input class="usuario" type="text" id="usuario" placeholder="Usuário" autofocus>
+                    <br>
+                    <input class="senha" type="password" placeholder="Senha" id="senha">
+                    <br>
+                    <input class="entrar" type="submit" id="bater" value="Entrar" onclick="login()">
+                    <br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <h2 class="nome_rodape">
+            <a class="link" href="https://github.com/brunoaguiar1986" target="_blank" style="text-decoration: none;"> github (brunoaguiar1986)</a>
+        </h2>
+    </footer>
+
+</body>
+
+</html>
