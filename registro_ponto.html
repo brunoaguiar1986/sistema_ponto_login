@@ -21,6 +21,7 @@
             <h3 id="conexao"></h3>
             <h3 id="fechar"><input type="button" id="sair" value="Sair" onclick="sair()"></h3>
         </div>
+        <hr>
 
         <script>
             //Mostrando que a conexão foi feita com sucesso e o usuário que fez o login
@@ -36,15 +37,15 @@
         <script>
             //Header com nome do usuário que fez o login e nome completo dos usuários
             if (senha == usuario_server) {
-                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[0]);
+                senha = ("Usuário Conectado: " + senha + "<br>" + " Olá, " + nomes_usuarios[0]);
                 document.getElementById('conexao').innerHTML = senha;
             }
             if (senha == usuario_admin) {
-                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[1]);
+                senha = ("Usuário Conectado: " + senha + "<br>" + " Olá, " + nomes_usuarios[1]);
                 document.getElementById('conexao').innerHTML = senha;
             }
             if (senha == usuario_dev) {
-                senha = ("Usuário Conectado: " + senha + " ---- " + " Olá, " + nomes_usuarios[2]);
+                senha = ("Usuário Conectado: " + senha + "<br>" + " Olá, " + nomes_usuarios[2]);
                 document.getElementById('conexao').innerHTML = senha;
             }
         </script>
@@ -57,7 +58,7 @@
             <h3 id="usuario"></h3>
         </p>
     </h1>
-
+    <hr>
     <table id="table">
         <div class="registros">
             <div class="horario">
