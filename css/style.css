@@ -40,12 +40,13 @@ h2 {
     background-color: #f0f2f5;
     font-size: 14px;
     align-items: center;
+    padding-left: 150px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(255, 255, 255, 0.01);
     border: 1px solid black;
     border-radius: 30px;
-    width: 560px;
+    width: 400px;
     margin: 10px;
     margin-left: 390px;
     color: white;
@@ -88,6 +89,7 @@ p {
     border-radius: 30px;
     border-color: rgb(177, 172, 172);
     border: 1px solid black;
+    width: 97px;
 }
 
 #bater {
@@ -232,21 +234,20 @@ footer:hover {
 }
 
 @media(max-width: 430px) {
-    .cabecalho {
+    .cabecalho,
+    .cabecalho2 {
         display: contents;
-    }
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-    .nome {
-        border: 1px solid white;
-        border-radius: 15px;
     }
     h1 {
         width: 350px;
         font-size: 20px;
         text-align: center;
+    }
+    hr {
+        width: 100px;
+    }
+    .container {
+        padding: 0%;
     }
     .login {
         width: 350px;
@@ -255,6 +256,11 @@ footer:hover {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
+    }
+    .registros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .image {
         width: 350px;
@@ -265,7 +271,6 @@ footer:hover {
     }
     #horas {
         font-size: 80px;
-        margin-left: 30px;
     }
     .rodape {
         display: contents;
@@ -273,5 +278,11 @@ footer:hover {
     .nome_rodape {
         border: 1px solid white;
         border-radius: 15px;
+    }
+    .pdf_imprimir {
+        margin-left: 0%;
+        width: 198px;
+        margin: 58px;
+        height: 30px;
     }
 }
