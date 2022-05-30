@@ -238,24 +238,37 @@ footer:hover {
     .cabecalho2 {
         display: contents;
     }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
     h1 {
         width: 350px;
         font-size: 20px;
         text-align: center;
     }
+    .atualizando {
+        display: none;
+    }
+    .nome {
+        border: 1px solid white;
+        border-radius: 15px;
+        width: 370px;
+    }
     hr {
         width: 100px;
     }
     .container {
-        padding: 0%;
+        position: fixed;
     }
     .login {
         width: 350px;
+        margin-bottom: 330px;
     }
     .tudo {
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .registros {
         display: flex;
@@ -265,12 +278,16 @@ footer:hover {
     .image {
         width: 350px;
     }
+    .imagem {
+        display: flex;
+        padding-top: 260px;
+    }
     .hora_imagem {
         width: 100%;
         text-align: center;
     }
     #horas {
-        font-size: 80px;
+        font-size: 70px;
     }
     .rodape {
         display: contents;
@@ -278,6 +295,7 @@ footer:hover {
     .nome_rodape {
         border: 1px solid white;
         border-radius: 15px;
+        width: 370px;
     }
     .pdf_imprimir {
         margin-left: 0%;
