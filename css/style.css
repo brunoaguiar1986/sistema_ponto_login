@@ -79,6 +79,8 @@ p {
 #batida3,
 #batida4 {
     text-align: center;
+    font-size: 15px;
+    font-weight: bold;
     border: 1px solid black;
     border-radius: 30px;
     border-color: rgb(177, 172, 172);
@@ -245,15 +247,15 @@ footer:hover {
     h1 {
         width: 350px;
         font-size: 20px;
-        text-align: center;
+        text-align: end;
     }
-    .atualizando {
-        display: none;
+    .vindo {
+        text-align: center;
+        margin-left: 50px;
     }
     .nome {
         border: 1px solid white;
         border-radius: 15px;
-        width: 370px;
     }
     hr {
         width: 100px;
@@ -263,7 +265,7 @@ footer:hover {
     }
     .login {
         width: 350px;
-        margin-bottom: 330px;
+        margin-bottom: 320px;
     }
     .tudo {
         display: flex;
@@ -280,7 +282,7 @@ footer:hover {
     }
     .imagem {
         display: flex;
-        padding-top: 260px;
+        margin-top: 330px;
     }
     .hora_imagem {
         width: 100%;
@@ -295,11 +297,10 @@ footer:hover {
     .nome_rodape {
         border: 1px solid white;
         border-radius: 15px;
-        width: 370px;
     }
     .pdf_imprimir {
         margin-left: 0%;
-        width: 198px;
+        width: 300px;
         margin: 58px;
         height: 30px;
     }
